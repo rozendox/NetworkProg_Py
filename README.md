@@ -24,19 +24,20 @@ Bem-vindo ao repositório . Este repositório contém scripts e ferramentas de h
 
 
 1. Clone este repositório:
+   
    ```bash
    git clone https://github.com/seu-usuario/Network-Prog.git
-Navegue até o diretório:
-Copiar código
-   ```bash
-  cd Network-Prog
-````
 
-Instale as dependências:
+2. Navegue até o diretório:
+
+   ```bash
+   cd Network-Prog
+   ````
   
 
 Uso
-Cada script possui instruções específicas de uso em seu cabeçalho. Certifique-se de ler e entender o funcionamento antes de executar. Experimente os scripts em ambientes controlados, como máquinas virtuais ou redes privadas.
+Cada script possui instruções específicas de uso em seu cabeçalho. Certifique-se de ler e entender o funcionamento antes de executar. 
+Experimente os scripts em ambientes controlados, como máquinas virtuais ou redes privadas.
 
 Contribuição
 Se você deseja contribuir com o repositório, por favor, siga as etapas:

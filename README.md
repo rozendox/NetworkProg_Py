@@ -27,16 +27,13 @@ Bem-vindo ao repositório . Este repositório contém scripts e ferramentas de h
    ```bash
    git clone https://github.com/seu-usuario/Network-Prog.git
 Navegue até o diretório:
-bash
 Copiar código
    ```bash
-#### cd hacking-scripts
+  cd Network-Prog
+````
 
 Instale as dependências:
   
-  Copiar código
-   ```bash
-   pip install -r requirements.txt
 
 Uso
 Cada script possui instruções específicas de uso em seu cabeçalho. Certifique-se de ler e entender o funcionamento antes de executar. Experimente os scripts em ambientes controlados, como máquinas virtuais ou redes privadas.

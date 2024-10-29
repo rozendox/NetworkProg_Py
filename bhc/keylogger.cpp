@@ -2,7 +2,7 @@
 // Created by roxyp on 28/10/2024.
 //
 
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -44,3 +44,5 @@ int main() {
     UnhookWindowsHookEx(hook);
     return 0;
 }
+
+*/

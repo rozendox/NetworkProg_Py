@@ -11,7 +11,7 @@ int main() {
     WSADATA wsaData;
     SOCKET sock;
     struct sockaddr_in target;
-    char buffer[512];  // Tamanho menor e mais razoável
+    char buffer[512];
 
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "WSAStartup falhou" << std::endl;
@@ -40,9 +40,9 @@ int main() {
     const char* testData = "TESTE-REDE-123";
     strncpy(buffer, testData, sizeof(buffer));
 
-    // Envio controlado com delay
+
     int packetSize = strlen(testData);
-    int numPacotes = 10; // Número limitado de pacotes
+    int numPacotes = 10;
 
     std::cout << "Iniciando teste de rede..." << std::endl;
 

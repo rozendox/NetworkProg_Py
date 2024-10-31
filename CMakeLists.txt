@@ -4,5 +4,6 @@ project(Network_Prog)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Network_Prog
-    bhc/DDoS.cpp
-    bhc/keylogger.cpp)
+        bhc/DDos/DDoS_2.cpp)
+
+target_link_libraries(Network_Prog ws2_32)

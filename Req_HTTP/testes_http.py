@@ -1,12 +1,12 @@
 """
                                    formato:
 
-    mock/request mod
-     ||
-     ||
-     ||
+mock/request mod
+    | |
+    | |
+     |
    \\ //
-    \|/
+    \ /
 ----------                                  ---------------
 |        |  ----- http request --------->   |     app2/   |
 |  app1  |  <----- http response --------   |     api/    |
@@ -15,7 +15,8 @@
 
 
 
-
+rode pytest testes_http.py
+(rodamos testes 
 """
 
 from typing import Literal, TypeAlias, get_args

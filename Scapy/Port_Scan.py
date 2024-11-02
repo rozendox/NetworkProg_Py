@@ -1,6 +1,7 @@
 from scapy.all import *
 import time
 
+
 def scan_ports(ip, ports):
     results = {}
     for port in ports:
@@ -13,6 +14,7 @@ def scan_ports(ip, ports):
             results[port] = "Aberto"
         print(f"Porta {port}: {results[port]}")
     return results
+
 
 if __name__ == "__main__":
     ip = input("Digite o IP: ")

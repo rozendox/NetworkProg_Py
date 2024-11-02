@@ -14,6 +14,9 @@ Bem-vindo ao repositório . Este repositório contém scripts e ferramentas de h
 - Ferramentas de análise de vulnerabilidades
 - Exemplos de ataque e defesa
 - Estudos de criptografia e segurança de dados
+- Requisições http
+- Servidores e Clientes TCP E UDP (python e c++)
+- 
 
 ## Pré-requisitos
 

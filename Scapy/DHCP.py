@@ -9,13 +9,19 @@ from time import sleep
 
 meu_mac = get_if_hwaddr(conf.iface)
 
+
 def dhcp_discover():
-    pacote = Ether(src=meu_mac) / IP(src='0.0.0.0', dst='255.255.255.255') / UDP(sport=68, dport=67) / DHCP(options=[('message-type', 'discover'), 'end'])
+    pacote = Ether(src=meu_mac) / IP(src='0.0.0.0', dst='255.255.255.255') / UDP(sport=68, dport=67) / DHCP(
+        options=[('message-type', 'discover'), 'end'])
     sendp(pacote, iface=conf.iface)
 
+
 def dhcp_request(requested, server_ip):
-    pacote = Ether(src=meu_mac) / IP(src='0.0.0.0', dst=server_ip) / UDP(sport=68, dport=67) / BOOTP(chaddr=meu_mac, xid=RandInt()) / DHCP(options=[('message-type', 'request'), ('server_id', server_ip), ('requested_addr', requested), 'end'])
+    pacote = Ether(src=meu_mac) / IP(src='0.0.0.0', dst=server_ip) / UDP(sport=68, dport=67) / BOOTP(chaddr=meu_mac,
+                                                                                                     xid=RandInt()) / DHCP(
+        options=[('message-type', 'request'), ('server_id', server_ip), ('requested_addr', requested), 'end'])
     sendp(pacote, iface=conf.iface)
+
 
 # Captura a resposta DHCP Offer
 s = AsyncSniffer(filter='udp and port 67')  # Use port 67 para captar ofertas

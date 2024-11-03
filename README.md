@@ -15,7 +15,7 @@ Bem-vindo ao repositório . Este repositório contém scripts e ferramentas de h
 - Exemplos de ataque e defesa
 - Estudos de criptografia e segurança de dados
 - Requisições http
-- Servidores e Clientes TCP E UDP (python e c++)
+- Servidores e Clientes TCP E UDP (python e c++ and rust)
 - 
 
 ## Pré-requisitos

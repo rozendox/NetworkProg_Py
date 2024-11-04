@@ -2,7 +2,7 @@ use std::io::{self, Write, Read};
 use std::net::TcpStream;
 
 const HOST: &str = "127.0.0.1";
-const PORT: u16 = 12345;
+const PORT: u16 = 12346;
 
 fn main() -> io::Result<()> {
     let mut client = TcpStream::connect((HOST, PORT))?;

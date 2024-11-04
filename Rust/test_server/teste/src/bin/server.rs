@@ -7,7 +7,7 @@ use std::thread;
 use chrono::Local;
 
 const HOST: &str = "127.0.0.1";
-const PORT: u16 = 12345;
+const PORT: u16 = 12346;
 const DIRECTORY: &str = "files";
 
 type ClientMap = Arc<Mutex<HashMap<String, TcpStream>>>;
@@ -110,7 +110,7 @@ fn handle_client(mut stream: TcpStream, clients: ClientMap, messages: MessageLis
                 let _ = stream.write(format!("Mensagens:\n{}\n", message_list).as_bytes());
             },
             _ => {
-                let _ = stream.write(b"Comando inv \xE1lido!\n");
+                let _ = stream.write(b"Comando inv\xE1lido!\n");
             }
         }
     }

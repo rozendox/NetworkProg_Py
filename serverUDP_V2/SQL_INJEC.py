@@ -2,8 +2,8 @@ import socket
 import json
 from cryptography.fernet import Fernet
 
-UDP_IP = "127.0.0.1"
-UDP_PORT = 5005
+UDP_IP = ""
+UDP_PORT = ""
 
 # Chave de criptografia
 KEY = Fernet.generate_key()

@@ -24,6 +24,7 @@ func clientProgram() {
 
 	message, _ := bufio.NewReader(conn).ReadString('\n')
 	fmt.Print(message)
+	
 
 	reader := bufio.NewReader(os.Stdin)
 	for {

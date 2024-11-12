@@ -81,3 +81,4 @@ while True:
     comando = json.loads(data.decode())
     resposta = executar_comando(comando)
     servidor_socket.sendto(json.dumps(resposta).encode(), addr)
+

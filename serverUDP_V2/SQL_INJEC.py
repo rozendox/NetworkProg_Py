@@ -2,8 +2,8 @@ import socket
 import json
 from cryptography.fernet import Fernet
 
-UDP_IP = "127.0.0.1"
-UDP_PORT = 5005
+UDP_IP = ""
+UDP_PORT = ""
 
 # Chave de criptografia
 KEY = Fernet.generate_key()
@@ -36,3 +36,4 @@ def send_request(action, table_name, **kwargs):
 # Exemplo de ataque de injeção SQL
 send_request("create_table", "users", columns="(id INTEGER PRIMARY KEY, name TEXT, email TEXT)")
 send_request("create_table", "users", columns="(id INTEGER PRIMARY KEY, name TEXT, email TEXT); DROP TABLE users;")
+

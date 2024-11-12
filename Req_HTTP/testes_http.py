@@ -44,6 +44,8 @@ def cotacao(moeda: Moeda):
         return 'Erro de conexao. Tente novamente mais tarde.'
     except httpx.TimeoutException:
         return 'Erro de conexao. Tente novamente mais tarde.'
+    except httpx.HTTPStatusError:
+        return ' Erro de Status'
 
 
 @respx.mock

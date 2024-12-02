@@ -37,3 +37,4 @@ def send_request(action, table_name, **kwargs):
 passwords = ["password1", "password2", "secret", "admin"]
 for password in passwords:
     send_request("authenticate", "users", password=password)
+    

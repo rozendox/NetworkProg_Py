@@ -13,6 +13,7 @@ ssh_password = 'lovepython'
 proxy_host = '127.0.0.1'
 proxy_port = 1080
 
+
 # Função para configurar o túnel SSH
 def create_ssh_tunnel():
     ssh = paramiko.SSHClient()
@@ -25,6 +26,7 @@ def create_ssh_tunnel():
         print(f"Erro ao criar o túnel SSH: {e}")
         return None
 
+
 # Função para configurar o proxy SOCKS
 def create_socks_proxy():
     class SocksHTTPAdapter(HTTPAdapter):
@@ -36,6 +38,7 @@ def create_socks_proxy():
     session.mount('http://', SocksHTTPAdapter())
     session.mount('https://', SocksHTTPAdapter())
     return session
+
 
 # Criar o túnel SSH
 ssh = create_ssh_tunnel()
